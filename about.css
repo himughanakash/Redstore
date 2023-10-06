@@ -83,6 +83,7 @@ button {
     border-bottom-left-radius: 12px;
     border-top-right-radius: 12px;
     padding-left: 8px;
+    right: 135px;
     position: relative;
     bottom: 60px;
     box-shadow: 10px 10px 10px red;
@@ -97,11 +98,27 @@ button {
     border-bottom-left-radius: 12px;
     border-top-right-radius: 12px;
     padding-left: 8px;
+    right: 135px;
+    position: relative;
+    bottom: 60px;
+    box-shadow: 10px 10px 10px red;
+}
+
+.Mission {
+    background-color: rgb(18, 37, 88);
+    width: 200px;
+    height: 150px;
+    color: aliceblue;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-left: 8px;
+    right: 135px;
     position: relative;
     bottom: 60px;
      box-shadow: 10px 10px 10px red;
 
 }
+
 
 .Best {
     background-color: rgb(22, 39, 93);
@@ -113,7 +130,9 @@ button {
     border-bottom-left-radius: 12px;
     border-top-right-radius: 12px;
     padding-left: 8px;
-     box-shadow: 10px 10px 10px red;
+    right: 135px;
+    position: relative;
+    box-shadow: 10px 10px 10px red;
 
 }
 
@@ -182,4 +201,38 @@ button {
 }
 .blaa:hover{
     color: aqua;
+}
+
+.modal {
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(254, 126, 126, 0.7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.content {
+    position: absolute;
+    background: white;
+    width: 400px;
+    padding: 1em 2em;
+    border-radius: 4px;
+} 
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+.box-close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #fe0606;
+    text-decoration: none;
+    font-size: 30px;
 }
